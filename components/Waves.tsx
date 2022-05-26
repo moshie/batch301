@@ -97,7 +97,7 @@ const FloatingBoat = styled(Boat)`
 
 export const Waves = () => (
   <>
-    <FloatingBoat />
+    <FloatingBoat width="105" height="70" />
     <Ocean>
       <Wave />
       <Wave />

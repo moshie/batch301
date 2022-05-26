@@ -84,17 +84,17 @@ export const Filters = ({ searchChange, searchText, statusChange, status }: Filt
 
     <StatusCodes activeFilter={status}>
       <SuccessButton type="button" onClick={statusChange} data-filter="2">
-        <Tick />
+        <Tick width="17" height="17" />
         2xx
       </SuccessButton>
 
       <WarningButton type="button" onClick={statusChange} data-filter="4">
-        <Tick />
+        <Tick width="17" height="17" />
         4xx
       </WarningButton>
 
       <DangerButton type="button" onClick={statusChange} data-filter="5">
-        <Tick />
+        <Tick width="17" height="17" />
         5xx
       </DangerButton>
     </StatusCodes>

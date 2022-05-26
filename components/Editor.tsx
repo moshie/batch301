@@ -83,7 +83,7 @@ export const Editor = ({ value = '', disabled = false, onChange, onClick }: Edit
       <Input id="redirects-editor" onChange={onChange} value={value}></Input>
 
       <PrimaryButton type="button" size="lg" disabled={disabled} onClick={onClick}>
-        <Connections />
+        <Connections width="17" height="17" />
         Process
       </PrimaryButton>
     </Window>
