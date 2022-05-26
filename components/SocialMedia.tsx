@@ -38,13 +38,13 @@ export const SocialMedia = (props: HTMLAttributes<HTMLUListElement>) => (
   <List {...props}>
     <ListItem>
       <Link href="https://github.com/moshie" rel="noopener noreferrer" target="_blank">
-        <Github />
+        <Github width="35" height="35" />
         <span className="sr-only">github</span>
       </Link>
     </ListItem>
     <ListItem>
       <Link href="https://twitter.com/mosh1e" rel="noopener noreferrer" target="_blank">
-        <Twitter />
+        <Twitter width="35" height="35" />
         <span className="sr-only">twitter</span>
       </Link>
     </ListItem>
