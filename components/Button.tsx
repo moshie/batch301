@@ -21,6 +21,7 @@ export const Button = styled.button<ButtonProps>`
   will-change: transform;
   backface-visibility: hidden;
   transform: translateZ(0);
+  ${({ size }) => (size === 'lg' ? 'padding: 0.8em 2.5em 0.8em 1.5em;' : '')}
 
   &:focus {
     outline: none;
@@ -44,6 +45,13 @@ export const Button = styled.button<ButtonProps>`
 export const PrimaryButton = styled(Button)`
   background: #48077f;
   color: #fff;
+
+  &[disabled],
+  &[disabled]:hover,
+  &[disabled]:focus {
+    background: #7a7a7a;
+    cursor: not-allowed;
+  }
 
   &:hover,
   &:focus {

@@ -4,12 +4,17 @@ overrides:
   styled-components: ^5
 
 specifiers:
+  '@types/async': ^3.2.13
+  '@types/lodash.chunk': ^4.2.7
   '@types/node': 17.0.35
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
   '@types/styled-components': ^5.1.25
+  '@types/valid-url': ^1.0.3
+  async: ^3.2.3
   eslint: 8.16.0
   eslint-config-next: 12.1.6
+  lodash.chunk: ^4.2.0
   next: 12.1.6
   react: 18.1.0
   react-dom: 18.1.0
@@ -17,20 +22,27 @@ specifiers:
   styled-components: ^5
   styled-reset: ^4.4.1
   typescript: 4.7.2
+  valid-url: ^1.0.9
 
 dependencies:
+  async: 3.2.3
+  lodash.chunk: 4.2.0
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-is: 18.1.0
   styled-components: 5.3.5_4klixn56hmiqf6hh5nx3jyckvq
   styled-reset: 4.4.1_styled-components@5.3.5
+  valid-url: 1.0.9
 
 devDependencies:
+  '@types/async': 3.2.13
+  '@types/lodash.chunk': 4.2.7
   '@types/node': 17.0.35
   '@types/react': 18.0.9
   '@types/react-dom': 18.0.5
   '@types/styled-components': 5.1.25
+  '@types/valid-url': 1.0.3
   eslint: 8.16.0
   eslint-config-next: 12.1.6_k6khgwrcmlpd2kpaxkviqw2zii
   typescript: 4.7.2
@@ -376,6 +388,10 @@ packages:
     resolution: {integrity: sha512-WiBSI6JBIhC6LRIsB2Kwh8DsGTlbBU+mLRxJmAe3LjHTdkDpwIbEOZgoXBbZilk/vlfjK8i6nKRAvIRn1XaIMw==}
     dev: true
 
+  /@types/async/3.2.13:
+    resolution: {integrity: sha512-7Q3awrhnvm89OzfsmqeqRQh8mh+8Pxfgq1UvSAn2nWQ5y/F3+NrbIF0RbkWq8+5dY99ozgap2b3DNBNwjLVOxw==}
+    dev: true
+
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
     dependencies:
@@ -385,6 +401,16 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
+    dev: true
+
+  /@types/lodash.chunk/4.2.7:
+    resolution: {integrity: sha512-//tmaWHiANgToom/YYYKKqiCtlNz11fwYtMUUbaemNSbWTI+2zHtYW5nt1PHNCRWHPAJHHhn4UVFD9LKUFvatA==}
+    dependencies:
+      '@types/lodash': 4.14.182
+    dev: true
+
+  /@types/lodash/4.14.182:
+    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
     dev: true
 
   /@types/node/17.0.35:
@@ -419,6 +445,10 @@ packages:
       '@types/hoist-non-react-statics': 3.3.1
       '@types/react': 18.0.9
       csstype: 3.1.0
+    dev: true
+
+  /@types/valid-url/1.0.3:
+    resolution: {integrity: sha512-+33x29mg+ecU88ODdWpqaie2upIuRkhujVLA7TuJjM823cNMbeggfI6NhxewaRaRF8dy+g33e4uIg/m5Mb3xDQ==}
     dev: true
 
   /@typescript-eslint/parser/5.26.0_xztl6dhthcahlo6akmb2bmjmle:
@@ -576,6 +606,10 @@ packages:
   /ast-types-flow/0.0.7:
     resolution: {integrity: sha512-eBvWn1lvIApYMhzQMsu9ciLfkBY499mFZlNqG+/9WR7PVlroQw0vG30cOQQbaKz3sCEc44TAOu2ykzqXSNnwag==}
     dev: true
+
+  /async/3.2.3:
+    resolution: {integrity: sha512-spZRyzKL5l5BZQrr/6m/SqFdBN0q3OCI0f9rjfBzCMBIP4p75P620rR3gTmaksNOhmzgdxcaxdNfMy6anrbM0g==}
+    dev: false
 
   /axe-core/4.4.2:
     resolution: {integrity: sha512-LVAaGp/wkkgYJcjmHsoKx4juT1aQvJyPcW09MLCjVTh3V2cc6PnyempiLMNH5iMdfIX/zdbjUx2KDjMLCTdPeA==}
@@ -1535,6 +1569,10 @@ packages:
       path-exists: 3.0.0
     dev: true
 
+  /lodash.chunk/4.2.0:
+    resolution: {integrity: sha1-ZuXOH3btJ7QwPYxlEujRIW6BBrw=}
+    dev: false
+
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -2125,6 +2163,10 @@ packages:
   /v8-compile-cache/2.3.0:
     resolution: {integrity: sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA==}
     dev: true
+
+  /valid-url/1.0.9:
+    resolution: {integrity: sha1-HBRHm0DxOXp1eC8RXkCGRHQzogA=}
+    dev: false
 
   /which-boxed-primitive/1.0.2:
     resolution: {integrity: sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg==}

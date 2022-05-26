@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import { ChangeEventHandler, MouseEventHandler } from 'react';
+
+import { PrimaryButton } from './Button';
+import { Connections } from './icons/Connections';
 
 const Window = styled.div`
   box-shadow: 0 1px 4px rgba(#4a4a4a, 0.5);
@@ -6,6 +10,20 @@ const Window = styled.div`
   overflow: hidden;
   position: relative;
   margin-bottom: 2em;
+
+  button {
+    position: absolute;
+    bottom: 0px;
+    left: 0em;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+      left: auto;
+      right: 40px;
+      bottom: 30px;
+    }
+  }
 `;
 
 const Header = styled.header`
@@ -14,7 +32,7 @@ const Header = styled.header`
   border-bottom: 1px solid #fff;
   padding: 0.35em;
   text-align: center;
-  color: #232323;
+  color: #5d5d61;
   text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.6);
 `;
 
@@ -48,14 +66,26 @@ const Input = styled.textarea`
   }
 `;
 
-export const Editor = () => {
+interface EditorProps {
+  value?: string;
+  disabled: boolean;
+  onChange: ChangeEventHandler<HTMLTextAreaElement>;
+  onClick: MouseEventHandler<HTMLButtonElement>;
+}
+
+export const Editor = ({ value = '', disabled = false, onChange, onClick }: EditorProps) => {
   return (
     <Window>
       <Header>Redirects.txt</Header>
       <label htmlFor="redirects-editor" className="sr-only">
         Redirects
       </label>
-      <Input id="redirects-editor"></Input>
+      <Input id="redirects-editor" onChange={onChange} value={value}></Input>
+
+      <PrimaryButton type="button" size="lg" disabled={disabled} onClick={onClick}>
+        <Connections />
+        Process
+      </PrimaryButton>
     </Window>
   );
 };

@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 import styled from 'styled-components';
 
-import { Triangle } from './Triangle';
+import { Triangle } from './icons/Triangle';
 
 const Wrapper = styled.div`
   background-image: url(./images/subtle-pattern.png), linear-gradient(to top, #7c07c1 0%, #510a9d 58%);
@@ -18,7 +18,7 @@ const Wrapper = styled.div`
     height: 33em;
   }
 
-  .triangle {
+  svg {
     position: absolute;
     bottom: 0;
     left: 0;
