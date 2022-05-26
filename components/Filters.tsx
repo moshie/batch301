@@ -39,11 +39,11 @@ const StatusCodes = styled.div<Record<'activeFilter', Statuses | null>>`
     }
 
     svg {
-      fill: rgba(255, 255, 255, 0.5);
+      fill: rgba(0, 0, 0, 0.5);
     }
 
     &[data-filter='${({ activeFilter }) => activeFilter}'] svg {
-      fill: #fff;
+      fill: #000;
     }
   }
 `;

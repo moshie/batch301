@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import type { NextPage } from 'next';
 
 import { Slant } from '../components/Slant';
@@ -9,6 +10,9 @@ import { RedirectTool } from '../components/RedirectTool';
 
 const Home: NextPage = () => (
   <>
+    <Head>
+      <title>Batch 301 &middot; Bulk redirect checker</title>
+    </Head>
     <Container>
       <Header role="banner" className="clearfix" />
       <Description>Web development tool to validate a collection of urls redirect chain and status codes.</Description>

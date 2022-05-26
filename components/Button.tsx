@@ -60,32 +60,32 @@ export const PrimaryButton = styled(Button)`
 `;
 
 export const SuccessButton = styled(Button)`
-  background: #2e9612;
-  color: #fff;
+  background: #36a518;
+  color: #141414;
 
   &:hover,
   &:focus {
-    background: #298003;
+    background: #2e9112;
   }
 `;
 
 export const WarningButton = styled(Button)`
   background: #cac315;
-  color: #fff;
+  color: #141414;
 
   &:hover,
   &:focus {
-    background: #a9a703;
+    background: #b4af13;
   }
 `;
 
 export const DangerButton = styled(Button)`
   background: #ff3f3f;
-  color: #fff;
+  color: #141414;
 
   &:hover,
   &:focus {
-    background: #d73429;
+    background: #ff0a0a;
   }
 `;
 
