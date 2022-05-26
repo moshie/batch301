@@ -69,7 +69,7 @@ export const useRedirectTool = () => {
       setErrors([]);
     } catch (error) {
       console.error(error);
-      setErrors((prevErrors) => [{ message: error.message }, ...prevErrors]);
+      setErrors((prevErrors) => [{ message: (error as Error).message }, ...prevErrors]);
     }
   };
 
