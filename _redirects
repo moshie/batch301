@@ -1,0 +1,11 @@
+# Redirects from what the browser requests to what we serve
+
+http://batch301.netlify.com/* https://batch301.wp-unite.io/:splat 301!
+https://batch301.netlify.com/* https://batch301.wp-unite.io/:splat 301!
+
+/source/url.html            /testing/source/url         301
+/super/test/url/page.html   /super/test/url             301
+/super/test/url             /super/testing/source/url   301
+
+/cancel                     /?cancel=1                  301
+/success                    /?success=1                 301
