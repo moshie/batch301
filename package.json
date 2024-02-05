@@ -24,7 +24,7 @@
     "@types/async": "^3.2.24",
     "@types/lodash.chunk": "^4.2.9",
     "@types/node": "20.10.0",
-    "@types/react": "18.2.38",
+    "@types/react": "18.2.53",
     "@types/react-dom": "18.2.17",
     "@types/styled-components": "^5.1.32",
     "@types/valid-url": "^1.0.7",
