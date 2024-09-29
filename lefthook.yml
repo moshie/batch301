@@ -1,0 +1,25 @@
+# EXAMPLE USAGE:
+#
+#   Refer for explanation to following link:
+#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
+#
+
+pre-push:
+  commands:
+    test:
+      run: pnpm test
+
+pre-commit:
+  parallel: true
+  commands:
+    check:
+      name: linting
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
+      stage_fixed: true
+    typecheck:
+      glob: "*.{ts,tsx,cjs,mjs,d.ts,json}"
+      run: pnpm typecheck
+    audit:
+      glob: "package.json"
+      run: "pnpm audit"
