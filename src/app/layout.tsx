@@ -1,9 +1,10 @@
+import { Header } from "@/components/Header";
 import type { Metadata } from "next";
-import { Fredoka } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 
-const fredoka = Fredoka({
-	variable: "--font-fredoka-sans",
+const montserrat = Montserrat({
+	variable: "--font-montserrat-sans",
 	subsets: ["latin"],
 });
 
@@ -19,7 +20,14 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${fredoka.variable} antialiased`}>{children}</body>
+			<body
+				className={`${montserrat.variable} bg-purple-700 font-sans antialiased`}
+			>
+				<div className="container mx-auto max-w-[992px]">
+					<Header />
+					{children}
+				</div>
+			</body>
 		</html>
 	);
 }
