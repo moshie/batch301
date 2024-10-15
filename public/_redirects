@@ -1,7 +1,7 @@
 # Redirects from what the browser requests to what we serve
 
+http://batch301.wp-unite.io/* https://batch301.moshie.dev/:splat 301!
 https://batch301.wp-unite.io/* https://batch301.moshie.dev/:splat 301!
-http://batch301.netlify.app/* https://batch301.moshie.dev/:splat 301!
 https://batch301.netlify.app/* https://batch301.moshie.dev/:splat 301!
 
 /source/url.html            /testing/source/url         301
