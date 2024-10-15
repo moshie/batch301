@@ -52,7 +52,7 @@ export const useRedirectTool = () => {
       const redirects = text.split('\n').filter((txt) => txt.length);
       var chunkedRedirects = chunk(redirects, 5);
 
-      await eachLimit(chunkedRedirects, 6, async (chunkedRedirect, done) => {
+      await eachLimit(chunkedRedirects, 6, async (chunkedRedirect) => {
         const response = await fetch('https://6coxy6cu1d.execute-api.us-west-2.amazonaws.com/live/', {
           method: 'POST',
           mode: 'cors',
@@ -61,7 +61,6 @@ export const useRedirectTool = () => {
         });
         const results: IResult[] = await response.json();
         setResults((oldResults) => [...oldResults, ...results]);
-        done();
       });
 
       setSubmitted(true);
